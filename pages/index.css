@@ -8,6 +8,8 @@
   font-size: 16px;
   line-height: 20px;
   background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
 }
 .header {
   display: flex;
@@ -15,7 +17,7 @@
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
-  padding: 30px 80px 40px;
+  padding: 0;
   position: relative;
   box-sizing: border-box;
   border: 5px;
@@ -23,27 +25,26 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
   margin: 0;
 }
 
 .nav__logo {
   width: 105px;
   height: 39px;
-  margin-top: 30px;
-  margin-left: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 .nav__links {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
   column-gap: 20px;
   list-style-type: none;
   padding-left: 0;
-  margin-top: 30px;
-  margin-right: 80px;
-  font-family: "Inter";
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -58,33 +59,54 @@
 
 .header__content {
   display: flex;
-  justify-content: space-between;
   margin-bottom: auto;
 }
 
 .header__title {
   max-width: 709px;
   padding: 0;
-  margin-top: 183px;
-  font-family: "Noto Serif";
+  margin: 0;
+  position: absolute;
+  top: 183px;
+  left: 80px;
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 58px;
   line-height: 72px;
   color: #2f80ed;
 }
+.header__span-accent {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  color: #000000;
+}
 
 .header__description {
-  max-width: 515px;
-  font-size: 20px;
-  line-height: 30px;
+  max-width: 683px;
+  top: 28px;
+  left: 80px;
   text-align: justify;
   padding: 0;
-  margin-top: 32px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .header__image {
-  max-width: 636px;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  max-width: 568px;
+  max-height: 646px;
+  margin: 0;
 }
 
 .header__footer {
@@ -94,8 +116,19 @@
   align-items: center;
   justify-content: flex-end;
   box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
 }
-
+.header__paragraph {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 40px;
+  margin-left: 80px;
+}
 .header__link {
   color: #2f80ed;
   text-decoration: none;
