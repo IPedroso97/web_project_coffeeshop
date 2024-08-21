@@ -44,11 +44,12 @@
         <h1 class="header__title">
           Café especial
           <span class="header__span-accent">na biblioteca Triple Peaks</span>
+          <p class="header__description">
+            Essa é nossa zona de estudo! Temos aquele cafezinho para energizar
+            você e vibrações aconchegantes para soltar a criatividade
+          </p>
         </h1>
-        <p class="header__description">
-          Essa é nossa zona de estudo! Temos aquele cafezinho para energizar
-          você e vibrações aconchegantes para soltar a criatividade
-        </p>
+
         <img
           class="header__image"
           src="./images/inside_coffee_shop.png"
@@ -64,7 +65,37 @@
         </div>
       </header>
       <main class="content">
-        <section class="recipes"></section>
+        <section class="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">
+            Confira algumas receitas que coletamos para o seu lanchinho caseiro:
+          </p>
+          <div class="recipes__videos">
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=X_tpi8FND37m3yo3"
+                title="YouTube Aeropress Recipe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <p class="recipes__video-caption">Receita Aeropress</p>
+            </div>
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/st571DYYTR8?si=xybSqOBM6FoQbz-J"
+                title="YouTube French Press Recipe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">Receita de Prensa Francesa</p>
+            </div>
+          </div>
+        </section>
         <section class="reservation"></section>
       </main>
       <footer class="footer"></footer>
