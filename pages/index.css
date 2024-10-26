@@ -9,7 +9,7 @@
   line-height: 20px;
   background-color: #ffffff;
   background-image: url(../images/background_header.svg);
-  background-size: cover;
+  background-size: contain;
 }
 .header {
   display: flex;
@@ -60,22 +60,27 @@
 
 .header__content {
   display: flex;
-  margin-bottom: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .header__title {
   max-width: 709px;
   padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 183px;
-  left: 80px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 58px;
   line-height: 72px;
   color: #2f80ed;
+}
+.header__title-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 183px;
+  margin-left: 80px;
 }
 .header__span-accent {
   display: block;
@@ -103,11 +108,10 @@
 }
 
 .header__image {
-  position: absolute;
-  top: 124px;
-  right: 5px;
-  max-width: 568px;
-  max-height: 646px;
+  width: 646px;
+  height: 568px;
+  margin-right: 5px;
+  margin-top: 124px;
   margin: 0;
 }
 
