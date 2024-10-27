@@ -224,10 +224,7 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 100px auto 80px;
 }
 
 .reservation__form {
@@ -260,6 +257,8 @@
 .form__input {
   width: 385px;
   max-height: 60px;
+  border: 1px;
+  border-color: #838383;
   padding: 15px 20px 15px;
   margin-bottom: 32px;
   font-family: Inter;
@@ -277,11 +276,19 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  color: #ffffff;
   line-height: 20px;
+  background-color: #2f80ed;
 }
 .form__button:hover {
   opacity: 70%;
 }
 .form__checkbox {
   border-radius: 2px;
+  width: 20px;
+  height: 20px;
+}
+.form__label_items_center {
+  display: flex;
+  column-gap: 12px;
 }
