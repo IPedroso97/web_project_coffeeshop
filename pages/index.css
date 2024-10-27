@@ -1,7 +1,6 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  height: 100vh;
   margin: 0 auto;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
@@ -13,8 +12,12 @@
 .header {
   display: flex;
   flex-direction: column;
-
-  margin: 0;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .nav {
@@ -60,6 +63,10 @@
 }
 
 .header__title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 183px;
+  margin-left: 80px;
   max-width: 709px;
   padding: 0;
   font-family: "Noto Serif", "Times New Roman", serif;
@@ -68,12 +75,6 @@
   font-size: 58px;
   line-height: 72px;
   color: #2f80ed;
-}
-.header__title-content {
-  display: flex;
-  flex-direction: column;
-  margin-top: 183px;
-  margin-left: 80px;
 }
 .header__span-accent {
   display: block;
@@ -89,7 +90,7 @@
 .header__description {
   max-width: 683px;
   margin-top: 28px;
-  margin-left: 0px;
+  margin-left: 80px;
   text-align: justify;
   padding: 0;
   font-family: "Noto Serif", "Times New Roman", serif;
@@ -106,8 +107,6 @@
   right: 5px;
   width: 646px;
   height: 568px;
-  margin-right: 5px;
-  margin-top: 124px;
   margin: 0;
 }
 
@@ -149,6 +148,7 @@
 }
 .recipes {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
@@ -165,27 +165,37 @@
   font-size: 44px;
   line-height: 52px;
   color: #ffffff;
+  margin-top: 100px;
+  margin-left: 80px;
 }
 .recipes__subtitle {
+  max-width: 438px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+  margin-top: 24px;
+  margin-left: 80px;
 }
 .recipes__videos {
   display: flex;
+  column-gap: 40px;
   justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 215px;
 }
 .recipes__video-item {
+  margin: 0;
 }
 .recipes__iframe {
-  row-gap: 40px;
   border: none;
 }
 .recipes__video-caption {
-  font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
