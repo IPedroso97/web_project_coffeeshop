@@ -1,6 +1,7 @@
 .form {
   max-width: 385px;
   margin: 0 auto 120px;
+  z-index: 1;
 }
 
 .form__fieldset {
