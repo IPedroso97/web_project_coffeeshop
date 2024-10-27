@@ -200,7 +200,6 @@
 }
 .recipes__video-caption {
   display: flex;
-  justify-content: space-between;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -225,12 +224,19 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  margin: 100px auto;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reservation__form {
+  margin: 0 auto;
+}
+
+.form {
   max-width: 385px;
-  margin: 80px auto;
+  margin: 0 auto 120px;
 }
 
 .form__fieldset {
@@ -239,7 +245,7 @@
   flex-flow: column wrap;
   padding: 0;
   box-sizing: border-box;
-  border-bottom: 120px;
+  margin: 0;
   border: 0;
 }
 
@@ -253,9 +259,8 @@
 }
 .form__input {
   width: 385px;
-  height: 60px;
-  padding-top: 15px;
-  padding-left: 20px;
+  max-height: 60px;
+  padding: 15px 20px 15px;
   margin-bottom: 32px;
   font-family: Inter;
   font-style: normal;
