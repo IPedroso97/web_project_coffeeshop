@@ -1,6 +1,3 @@
-.content {
-  margin: 0;
-}
 .reservation {
   display: flex;
   flex-direction: column;
