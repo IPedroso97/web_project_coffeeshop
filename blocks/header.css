@@ -83,8 +83,9 @@
   justify-content: space-between;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-top: auto;
+  z-index: 1;
 }
 .header__footer-schedules {
   display: flex;

@@ -6,6 +6,7 @@
   color: #fff;
   padding: 60px 80px;
   z-index: 0;
+  overflow: hidden;
 }
 
 .footer__content {
