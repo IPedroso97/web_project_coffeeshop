@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   box-sizing: border-box;
-  background-color: #1f1f1f;
+  background-color: #0a2850;
   width: 100%;
   color: #fff;
   padding: 60px 80px;
@@ -53,6 +53,10 @@
 }
 
 .footer__social-link:hover {
+  color: #c1c1c1;
+}
+
+.footer__social-link:focus {
   color: #c1c1c1;
 }
 
